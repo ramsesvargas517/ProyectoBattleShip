@@ -10,10 +10,18 @@ import javax.swing.JOptionPane;
  *
  * @author Pablo
  */
+
+String NombreJugador = JOptionPane.showInputDialog ( "Introduzca el nombre del jugador: " );
+        System.out.println ("Se registro el nombre " + NombreJugador + "correctamente" )
+
 public class ProyectoPrograBattleShip {
 
     public static void main(String[] args) {
-      byte contrincante=0;
+      
+        String NombreJugador = JOptionPane.showInputDialog ( "Introduzca el nombre del jugador: " );
+        System.out.println ("Se registro el nombre " + NombreJugador + "correctamente" )
+        
+        byte contrincante=0;
       
       contrincante = Byte.parseByte(JOptionPane.showInputDialog(
               "Para continuar, seleccione su contrincante \n"
