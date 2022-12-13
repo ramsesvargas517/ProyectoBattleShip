@@ -37,9 +37,9 @@ public class Main {
         byte opcion = 0;
         do {
             opcion = Byte.parseByte(JOptionPane.showInputDialog(NombreJugador
-                    + ", seleccione la accion a realizar: \n"
+                    + ", Seleccione la acción a realizar: \n"
                     + "1 - Atacar \n"
-                    + "2 - Ver tablero de ataque \n3 - Ver tablero propio\n"
+                    + "2 - Ver el tablero de ataque \n3 - Ver el tablero propio\n"
                     + "4 - Hacer trampa\n5 - Salir del juego"));
             switch (opcion) {
                 case 1:
@@ -59,7 +59,7 @@ public class Main {
                     break;
                 default:
                     JOptionPane.showMessageDialog(null,
-                            "Opcion Invalida");
+                            "Opción Inválida");
             }
         } while (opcion != 5 || Bat1.getEndgame() == 5);
     }
